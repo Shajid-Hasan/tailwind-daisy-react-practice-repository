@@ -2,6 +2,8 @@ import React, { Suspense } from 'react';
 import NavBar from './Componets/Component/NavBar';
 import Carousel from './Componets/Component/Carousel/Carousel';
 import PricingOption from './Componets/Component/PricingOption/PricingOption';
+import ResultsChart from './Componets/Component/ResultsChart/ResultsChart';
+import ThreeDimScatterChart from './Componets/Component/ResultsChart/ThreeDimScatterChart';
 
 
 const pricingPromise = fetch('pricingData.json')
@@ -20,8 +22,9 @@ const App = () => {
       <Suspense fallback={<span className="loading loading-spinner text-warning"></span>}>
         <PricingOption pricingPromise={pricingPromise}></PricingOption>
       </Suspense>
+      <ResultsChart></ResultsChart>
+      <ThreeDimScatterChart></ThreeDimScatterChart>
     </main>
-      
     </>
   );
 };
