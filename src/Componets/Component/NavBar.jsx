@@ -17,7 +17,7 @@ const NavBar = () => {
 
 
     return (
-        <nav className='flex justify-between mx-10 mt-4 mb-60'>
+        <nav className='flex justify-between mx-10 mt-4 mb-10'>
             <span className='flex' onClick={() => setOpen(!open)}>
 
 
@@ -33,11 +33,11 @@ const NavBar = () => {
                     {links}
                 </ul>
 
-                <h3 className='ml-4'>My Navbar</h3>
+                <h3 className='ml-4 text-3xl text-bold'>My Navbar</h3>
 
             </span>
 
-            <ul className='md:flex justify-around gap-10 hidden'>
+            <ul className='md:flex justify-around gap-10 hidden text-2xl'>
                 {
                     links
                 }
@@ -52,7 +52,7 @@ const NavBar = () => {
                 <li><a href="/"></a>About</li>
                 <li><a href="/"></a>Blog</li>
             </ul> */}
-            <button>Sign In</button>
+            <button className='text-2xl font-semibold'>Sign In</button>
         </nav>
 
 

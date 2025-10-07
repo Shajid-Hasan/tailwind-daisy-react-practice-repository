@@ -15,13 +15,13 @@ const App = () => {
     <header>
         <NavBar></NavBar>
     </header>
-    
+    <Carousel></Carousel>
     <main>
       <Suspense fallback={<span className="loading loading-spinner text-warning"></span>}>
         <PricingOption pricingPromise={pricingPromise}></PricingOption>
       </Suspense>
     </main>
-      <Carousel></Carousel>
+      
     </>
   );
 };
